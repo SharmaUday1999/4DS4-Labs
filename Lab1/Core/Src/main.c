@@ -17,6 +17,14 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+/*
+ * FILE          : main.c
+ * PROJECT       : 4DS4 - Lab Assignment #1
+ * PROGRAMMER    : Uday Sharma, Vivek Patel
+ * FIRST VERSION : 2021-01-31
+ * DESCRIPTION   :
+ *   The functions in this file are used to output both Programmers' initials in morse code.
+ *   Mapped to PB4 and PB5, Red color displays the first initials, Green displays the second*/
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
@@ -273,6 +281,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+//
+// FUNCTION      : dot{color} and dash{color} functions
+// DESCRIPTION  :
+//   These functions set the output for GPIO pins respective to where an RGB LED
+//   is wired in. Then it leaves it on by using the HAL_DELAY() function as specific
+//   in the acceptance criteria for this assignment, after which the pin is set to 0
+//	 to turn the LED off.
+// PARAMETERS    :
+//   null
+// RETURNS       :
+//   void
+//
 void dotG(){
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
 	HAL_Delay(500);
