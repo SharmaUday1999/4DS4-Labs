@@ -54,8 +54,8 @@ all: main-build
 main-build: Lab1.elf secondary-outputs
 
 # Tool invocations
-Lab1.elf: $(OBJS) $(USER_OBJS) C:\Users\sharm\STM32CubeIDE\workspace_1.5.1\Lab1\STM32L432KCUX_FLASH.ld
-	arm-none-eabi-gcc -o "Lab1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\sharm\STM32CubeIDE\workspace_1.5.1\Lab1\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Lab1.elf: $(OBJS) $(USER_OBJS) C:\Users\Vivek\ Patel\Documents\GitHub\4DS4-Labs\Lab1\STM32L432KCUX_FLASH.ld
+	arm-none-eabi-gcc -o "Lab1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Vivek Patel\Documents\GitHub\4DS4-Labs\Lab1\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

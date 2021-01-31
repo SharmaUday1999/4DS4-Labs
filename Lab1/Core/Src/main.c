@@ -51,8 +51,13 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
-void dot();
-void dash();
+void dotR(); //First name dot - red
+void dashR(); // first name dash - red
+void dotG(); //Last name dot - green
+void dashG();//last name dash - green
+void lStop();//stop between parts of the same letter
+void wStop();//stop between two letters
+void iStop();//stop between consecutive initials
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -98,6 +103,45 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+
+	  //Vivek Patel
+	  //Red First letter
+	  dotR();
+	  lStop();
+	  dotR();
+	  lStop();
+	  dotR();
+	  lStop();
+	  dashR();
+	  wStop();
+
+	  //Green second letter
+	  dotG();
+	  lStop();
+	  dashG();
+	  lStop();
+	  dashG();
+	  lStop();
+	  dotG();
+	  iStop();
+
+	  //Uday Sharma
+	  //Red First letter
+	  dotR();
+	  lStop();
+	  dotR();
+	  lStop();
+	  dashR();
+	  wStop();
+
+	  //green second letter
+	  //Green second letter
+	   dotG();
+	   lStop();
+	   dotG();
+	   lStop();
+	   dotG();
+	   iStop();
 
     /* USER CODE BEGIN 3 */
   }
@@ -229,18 +273,41 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void dot(){
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+void dotG(){
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
 	HAL_Delay(500);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
+
 }
 
-void dash(){
+void dashG(){
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
 	HAL_Delay(1500);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
 }
 
+void dotR(){
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+	HAL_Delay(500);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0);
+
+}
+
+void dashR(){
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+	HAL_Delay(1500);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0);
+}
+
+void lStop(){
+	HAL_Delay(500);
+}
+void wStop(){
+	HAL_Delay(1500);
+}
+void iStop(){
+	HAL_Delay(2500);
+}
 /* USER CODE END 4 */
 
 /**
