@@ -471,7 +471,7 @@ void dot(uint16_t pin)
 {
 	HAL_GPIO_WritePin(GPIOB, pin, GPIO_PIN_SET);
 	HAL_Delay(500);
-	HAL_GPIO_WritePin(GPIOB, pin, 0);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
 
 }
 
