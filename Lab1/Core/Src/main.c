@@ -259,6 +259,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+//
+// FUNCTION      : morseCode(char letter, uint16_t pin)
+// DESCRIPTION  :
+//   This function contains case statements to choose different letters
+//   and pin number to allow for morse code conversion in either red light or
+//   green light
+// PARAMETERS    :
+//  letter, Pin Number
+// RETURNS       :
+//   void
+//
 void morseCode(char letter, uint16_t pin)
 {
 	switch(letter){
@@ -462,7 +474,7 @@ void morseCode(char letter, uint16_t pin)
 //   in the acceptance criteria for this assignment, after which the pin is set to 0
 //	 to turn the LED off.
 // PARAMETERS    :
-//   null
+//  Pin Number
 // RETURNS       :
 //   void
 //
@@ -481,6 +493,18 @@ void dash(uint16_t pin)
 	HAL_Delay(1500);
 	HAL_GPIO_WritePin(GPIOB, pin, 0);
 }
+
+//
+// FUNCTION      : lStop(), wStop() and iStop() functions
+// DESCRIPTION  :
+//   These functions provide a delay in between the dots and dashes,
+//   between two letters within the initials and between two consecutive
+//   initials respectively
+// PARAMETERS    :
+//  None
+// RETURNS       :
+//   void
+//
 
 void lStop()
 {
