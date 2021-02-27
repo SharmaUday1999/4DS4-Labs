@@ -20,7 +20,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stdio.h"
-#include "stdbool.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -43,7 +42,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart2;
-int passcodes[10] = {1210, 1282, 2283, 5432, 2345, 9999, 7777, 6789, 9876, 2468};
 
 /* USER CODE BEGIN PV */
 
@@ -53,9 +51,6 @@ int passcodes[10] = {1210, 1282, 2283, 5432, 2345, 9999, 7777, 6789, 9876, 2468}
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
-void accessGranted(void);
-void accessDenied(void);
-bool passcodeIsIn(int enteredValue);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -102,19 +97,14 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    /* USER CODE END WHILE */
 	printf("Please enter passcode this is a very SECURE site:");
 	HAL_Delay(1000);
 	scanf("%d",&passcode);
 	HAL_Delay(1000);
-	if(passcodeIsIn(passcode)){
-		accessGranted();
-	}
-	else{
-		accessDenied();
-	}
-    /* USER CODE END WHILE */
+	printf("%d\n",passcode);
+    /* USER CODE BEGIN 3 */
   }
-  /* USER CODE BEGIN 3 */
   /* USER CODE END 3 */
 }
 
@@ -231,7 +221,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LD3_Pin|GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : LD3_Pin */
   GPIO_InitStruct.Pin = LD3_Pin;
@@ -240,38 +230,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD3_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB4 PB5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
 }
 
 /* USER CODE BEGIN 4 */
-void accessGranted(void)
-{
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
-}
 
-void accessDenied(void)
-{
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
-}
-
-
-bool passcodeIsIn(int enteredValue)
-{
-	for(int i = 0; i < 9; i++){
-		if(enteredValue == passcodes[i]){
-			return true;
-		}
-	}
-	return false;
-}
 /* USER CODE END 4 */
 
 /**

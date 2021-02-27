@@ -43,7 +43,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart2;
-int passcodes[10] = {1210, 1282, 2283, 5432, 2345, 9999, 7777, 6789, 9876, 2468};
 
 /* USER CODE BEGIN PV */
 

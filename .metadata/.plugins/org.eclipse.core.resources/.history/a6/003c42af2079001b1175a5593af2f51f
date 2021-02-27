@@ -19,8 +19,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "stdio.h"
-#include "stdbool.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -43,7 +41,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef huart2;
-int passcodes[10] = {1210, 1282, 2283, 5432, 2345, 9999, 7777, 6789, 9876, 2468};
 
 /* USER CODE BEGIN PV */
 
@@ -53,9 +50,6 @@ int passcodes[10] = {1210, 1282, 2283, 5432, 2345, 9999, 7777, 6789, 9876, 2468}
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
-void accessGranted(void);
-void accessDenied(void);
-bool passcodeIsIn(int enteredValue);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -102,19 +96,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	printf("Please enter passcode this is a very SECURE site:");
-	HAL_Delay(1000);
-	scanf("%d",&passcode);
-	HAL_Delay(1000);
-	if(passcodeIsIn(passcode)){
-		accessGranted();
-	}
-	else{
-		accessDenied();
-	}
     /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
   }
-  /* USER CODE BEGIN 3 */
   /* USER CODE END 3 */
 }
 
