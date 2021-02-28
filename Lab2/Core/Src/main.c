@@ -17,6 +17,17 @@
  ******************************************************************************
  */
 /* USER CODE END Header */
+
+/* USER CODE END Header */
+/*
+ * FILE          : main.c
+ * PROJECT       : 4DS4 - Lab Assignment #2
+ * PROGRAMMER    : Uday Sharma, Vivek Patel
+ * FIRST VERSION : 2021-02-25
+ * DESCRIPTION   :
+ *   The functions in this file are used to output in serial and in buzzer and LED whether or
+ *  the user has entered in a correct password */
+/*
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
@@ -323,11 +334,37 @@ static void MX_GPIO_Init(void) {
 }
 
 /* USER CODE BEGIN 4 */
+/* USER CODE BEGIN 4 */
+
+//
+// FUNCTION      : accessGranted(void)
+// DESCRIPTION  :
+//  this function is used when the user has entered the correct passcode when
+//  prompted. It will turn on the green LED as well as turn on the buzzer
+// PARAMETERS    :
+//  void
+// RETURNS       :
+//   void
+//
 void accessGranted(void) {
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
 	TIM1->ARR = 1000;
 }
+
+/* USER CODE BEGIN 4 */
+
+//
+// FUNCTION      : accessDenied(void)
+// DESCRIPTION  :
+//   This fucntion will be called when the user enters an incorrect passcode.
+//   The red LED will b turned on and the buzzer will be turned on to indicate
+//   an unsuccesful login
+// PARAMETERS    :
+//  void
+// RETURNS       :
+//   void
+//
 
 void accessDenied(void) {
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
@@ -335,6 +372,18 @@ void accessDenied(void) {
 	TIM1->ARR = 4000;
 }
 
+/* USER CODE BEGIN 4 */
+
+//
+// FUNCTION      : passcodeIsIn(int enteredValue)
+// DESCRIPTION  :
+//   This function determine whether or not the passcode entered by the user
+//   is correct or not
+// PARAMETERS    :
+//  entered pin value
+// RETURNS       :
+//   True or false
+//
 bool passcodeIsIn(int enteredValue) {
 	for (int i = 0; i < 9; i++) {
 		if (enteredValue == passcodes[i]) {
