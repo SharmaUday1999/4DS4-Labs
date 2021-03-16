@@ -17,6 +17,14 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+/*
+ * FILE          : main.c
+ * PROJECT       : 4DS4 - Lab Assignment #2
+ * PROGRAMMER    : Uday Sharma, Vivek Patel
+ * FIRST VERSION : 2021-03-16
+ * DESCRIPTION   :
+ *   The functions in this file are used to read the values of a thermistor and display the temperature on an LCD and an RGB LED */
+/*
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stdio.h"
@@ -57,7 +65,7 @@ static void MX_USART2_UART_Init(void);
 static void MX_ADC1_Init(void);
 
 /* USER CODE BEGIN PFP */
-volatile measureVoltagePA0(ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedValue);
+volatile measureVoltage(ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedValue);
 void setLed(int temp);
 /* USER CODE END PFP */
 
@@ -324,7 +332,16 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-volatile measureVoltagePA0(ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedValue) {
+//
+// FUNCTION      : measureVoltagePA0(ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedValue)
+// DESCRIPTION  :
+//  this function measures the voltage from the thermistor and uses HAL_ADC to convert it to a temperature
+// PARAMETERS    :
+//  ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedValue
+// RETURNS       :
+//   volatile
+//
+volatile measureVoltage(ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedValue) {
 	/* USER CODE BEGIN 3 */
 	if (HAL_ADC_Start(&*hadc1) != HAL_OK) {
 		printf("HAL_ADC_START ERROR\r\n");
@@ -337,6 +354,15 @@ volatile measureVoltagePA0(ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedVal
 	return uhADCxConvertedValue;
 }
 
+//
+// FUNCTION      : setLed(int temp)
+// DESCRIPTION  :
+//  this function sets GPIO pin outs for specific colors on the RGB LED depending on the temperature detected by the thermistor
+// PARAMETERS    :
+//  int temp
+// RETURNS       :
+//   void
+//
 void setLed(int temp){
 	if(temp >= -40 && temp < 20) {
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);
