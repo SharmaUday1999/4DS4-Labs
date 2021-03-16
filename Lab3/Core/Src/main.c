@@ -56,22 +56,9 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_ADC1_Init(void);
 
-volatile measureVoltagePA0(ADC_HandleTypeDef *hadc1,
-	volatile uhADCxConvertedValue) {
-	/* USER CODE BEGIN 3 */
-	if (HAL_ADC_Start(&*hadc1) != HAL_OK) {
-		printf("HAL_ADC_START ERROR\r\n");
-	}
-	if (HAL_ADC_PollForConversion(&*hadc1, 10) != HAL_OK) {
-		printf("HAL_ADC_PollForConversion ERROR\r\n");
-	} else {
-		uhADCxConvertedValue = HAL_ADC_GetValue(&*hadc1);
-	}
-	return uhADCxConvertedValue;
-}
-
 /* USER CODE BEGIN PFP */
-
+volatile measureVoltagePA0(ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedValue);
+void setLed(int temp);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -137,25 +124,7 @@ int main(void)
 	int temp = (avgMeasuredVoltagePA0 - 580)/10;
 	printf("Measured Temperature = %d\r\n", temp);
 
-	if(temp >= -40 && temp < 20) {
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);
-		HAL_Delay(500);
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
-	} else if (temp >= 20 && temp < 37) {
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET);
-		HAL_Delay(500);
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);
-	} else if (temp >= 38 && temp < 40) {
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET);
-		HAL_Delay(500);
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);
-	} else {
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
-		HAL_Delay(500);
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-	}
+	setLed(temp);
 
 	char str[20];
 	sprintf(str, "%d", temp);
@@ -355,6 +324,40 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+volatile measureVoltagePA0(ADC_HandleTypeDef *hadc1, volatile uhADCxConvertedValue) {
+	/* USER CODE BEGIN 3 */
+	if (HAL_ADC_Start(&*hadc1) != HAL_OK) {
+		printf("HAL_ADC_START ERROR\r\n");
+	}
+	if (HAL_ADC_PollForConversion(&*hadc1, 10) != HAL_OK) {
+		printf("HAL_ADC_PollForConversion ERROR\r\n");
+	} else {
+		uhADCxConvertedValue = HAL_ADC_GetValue(&*hadc1);
+	}
+	return uhADCxConvertedValue;
+}
+
+void setLed(int temp){
+	if(temp >= -40 && temp < 20) {
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
+	} else if (temp >= 20 && temp < 37) {
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);
+	} else if (temp >= 38 && temp < 40) {
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);
+	} else {
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+	}
+}
 
 /* USER CODE END 4 */
 
