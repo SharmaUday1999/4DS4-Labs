@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Lab4/Core/Src/debounce&apos; to &apos;debounce.h&apos;" description="Rename resource &apos;debounce&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/debounce" name="debounce.h" stamp="1617565958234" updateReferences="true"/>
+</session>

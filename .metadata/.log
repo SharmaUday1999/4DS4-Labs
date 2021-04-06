@@ -732,3 +732,457 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-16 11:30:28.071
 !MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2021-03-16 12:49:51.730 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-03-16 12:49:55.126
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-03-16 12:49:55.159
+!MESSAGE Log4j initialized with config file C:\Users\sharm\Documents\GitHub\4DS4-Labs\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-03-16 12:50:02.762
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-16 12:50:03.384
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2021-03-18 15:12:11.384 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-03-18 15:12:17.868
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-03-18 15:12:17.944
+!MESSAGE Log4j initialized with config file C:\Users\sharm\Documents\GitHub\4DS4-Labs\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-03-18 15:12:26.422
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-18 15:12:27.002
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2021-03-24 12:06:07.287 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-03-24 12:06:13.444
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-03-24 12:06:13.514
+!MESSAGE Log4j initialized with config file C:\Users\sharm\Documents\GitHub\4DS4-Labs\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-03-24 12:06:21.847
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-24 12:06:22.425
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2021-04-04 15:24:25.559 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-04 15:24:32.248
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-04 15:24:32.322
+!MESSAGE Log4j initialized with config file C:\Users\sharm\Documents\GitHub\4DS4-Labs\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-04 15:24:41.157
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-04 15:24:41.758
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-04 15:33:50.298
+!MESSAGE Indexed 'Lab4' (25 sources, 83 headers) in 2.04 sec: 5,838 declarations; 34,552 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.005%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 15:51:16.416
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 15:53:42.629
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 15:54:33.367
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 16:00:07.671
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 16:02:37.201
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 16:16:06.659
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2021-04-04 16:16:30.320
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab2\Debug\Lab2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:315)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:142)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2021-04-04 16:16:30.320
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab2\Debug\Lab2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab2\Debug\Lab2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:315)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:142)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 16:16:53.369
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2021-04-04 16:18:44.509 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-04 16:18:48.111
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-04 16:18:48.144
+!MESSAGE Log4j initialized with config file C:\Users\sharm\Documents\GitHub\4DS4-Labs\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-04 16:18:55.870
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-04 16:18:56.531
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 16:19:24.530
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-04-04 16:22:57.561
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2021-04-04 16:24:50.484
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4\Debug\Lab4.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:315)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:142)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2021-04-04 16:24:50.484
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4\Debug\Lab4.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4\Debug\Lab4.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:315)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:142)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:296)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-04 17:13:13.508
+!MESSAGE Indexed 'Lab4_bak' (27 sources, 112 headers) in 1.57 sec: 10,862 declarations; 44,942 references; 3 unresolved inclusions; 46 syntax errors; 173 unresolved names (0.31%)
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:44.917
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:44.917
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:44.917
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:48.334
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:48.334
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:48.334
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:50.436
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:50.436
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:50.436
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:51.151
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:51.151
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:51.151
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:51.310
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:51.310
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:51.310
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:51.452
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:51.452
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:51.452
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:51.599
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:51.599
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:51.599
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:51.741
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:51.741
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:51.741
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:51.881
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:51.881
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:51.881
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:52.015
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:52.015
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:52.015
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:52.147
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:52.147
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:52.147
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:52.275
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:52.275
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:52.275
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:52.387
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:52.387
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:52.387
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:52.598
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:52.598
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:52.598
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:52.747
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:52.747
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:52.747
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:52.872
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:52.872
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:52.872
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:53.005
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:53.005
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:53.005
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:53.137
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:53.137
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:53.137
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:53.276
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:53.276
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:53.276
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:53.394
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:53.394
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:53.394
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:53.541
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:53.541
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:53.541
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:53.670
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:53.670
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:53.670
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:53.794
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:53.794
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:53.794
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:13:57.429
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:13:57.429
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:13:57.429
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:14:19.558
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:14:19.558
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:14:19.558
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:14:34.047
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:14:34.047
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:14:34.047
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:14:51.967
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:14:51.967
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:14:51.967
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:15:18.060
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:15:18.060
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:15:18.060
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:15:22.570
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:15:22.570
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:15:22.570
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.core.resources 4 77 2021-04-04 17:15:23.139
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2021-04-04 17:15:23.139
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2021-04-04 17:15:23.139
+!MESSAGE C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab4 overlaps the location of another project: 'Lab4_bak'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-04 17:16:14.874
+!MESSAGE Indexed 'Lab4_G17' (25 sources, 83 headers) in 1.51 sec: 5,838 declarations; 34,597 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0049%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-04 17:16:29.181
+!MESSAGE Indexed 'Lab4' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-04-04 17:17:27.631
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2021-04-04 17:17:27.633
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-04-04 17:17:27.633
+!MESSAGE The project description file (.project) for 'Lab4' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-04-04 17:17:27.727
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-04-04 17:17:29.896 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-04-04 17:17:30.861
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-04 17:17:33.509
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-04 17:17:33.544
+!MESSAGE Log4j initialized with config file C:\Users\sharm\Documents\GitHub\4DS4-Labs\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-04 17:17:41.052
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-04 17:17:41.679
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-04-04 17:17:58.659
+!MESSAGE Indexed 'Lab4' (26 sources, 109 headers) in 1.73 sec: 10,153 declarations; 44,293 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.31%)
+!SESSION 2021-04-05 19:36:05.023 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_272
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-04-05 19:36:11.337
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-04-05 19:36:11.406
+!MESSAGE Log4j initialized with config file C:\Users\sharm\Documents\GitHub\4DS4-Labs\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-04-05 19:36:20.451
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-04-05 19:36:21.034
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties

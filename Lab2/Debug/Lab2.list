@@ -1072,8 +1072,11 @@ static void MX_GPIO_Init(void) {
  800095c:	48000400 	.word	0x48000400
 
 08000960 <accessGranted>:
-
-/* USER CODE BEGIN 4 */
+// PARAMETERS    :
+//  void
+// RETURNS       :
+//   void
+//
 void accessGranted(void) {
  8000960:	b580      	push	{r7, lr}
  8000962:	af00      	add	r7, sp, #0
@@ -1098,6 +1101,10 @@ void accessGranted(void) {
  8000988:	40012c00 	.word	0x40012c00
 
 0800098c <accessDenied>:
+//  void
+// RETURNS       :
+//   void
+//
 
 void accessDenied(void) {
  800098c:	b580      	push	{r7, lr}
@@ -1123,7 +1130,11 @@ void accessDenied(void) {
  80009b4:	40012c00 	.word	0x40012c00
 
 080009b8 <passcodeIsIn>:
-
+// PARAMETERS    :
+//  entered pin value
+// RETURNS       :
+//   True or false
+//
 bool passcodeIsIn(int enteredValue) {
  80009b8:	b480      	push	{r7}
  80009ba:	b085      	sub	sp, #20
