@@ -22,6 +22,15 @@
   *
   ******************************************************************************
   */
+ /* USER CODE END Header */
+/*
+ * FILE          : main.c
+ * PROJECT       : 4DS4 - Lab Assignment #4
+ * PROGRAMMER    : Uday Sharma, Vivek Patel
+ * FIRST VERSION : 2021-04-3
+ * DESCRIPTION   :
+ *   The functions in this file are used to create a state machine for a credit card machine */
+/*
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -60,8 +69,8 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
-char readButton(void);
-int isInArray(int pin, int numbers[], int size);
+char buttonVal(void);
+int arrayIn(int pin, int numbers[], int size);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -154,7 +163,7 @@ int main(void)
 	 		HD44780_GotoXY(0, 1);
 	 		char pin[5] = {'0', '0', '0', '0', '\0'};
 	 		for(int i = 0; i < 4; i++) {
-	 			pin[i] = readButton();
+	 			pin[i] = buttonVal();
 	 		}
 	 		HAL_Delay(500);
 	 		int enteredPin = atoi(pin);
@@ -167,7 +176,7 @@ int main(void)
 	 		printf("%s\r\n", "Processing...");
 	 		HAL_Delay(10000);
 	 		HD44780_ClrScr();
-	 		if(isInArray(enteredPin, passwords, 9) == 1) {
+	 		if(arrayIn(enteredPin, passwords, 9) == 1) {
 		 		HD44780_PutStr("Transaction");
 		 		HD44780_GotoXY(0, 1);
 		 		HD44780_PutStr("Complete");
@@ -175,7 +184,7 @@ int main(void)
 
 	 			printf("%s\r\n", "Transaction Complete, Thank you!");
 	 			state = 1;
-	 		} else if (isInArray(enteredPin, passwords, 9) == 2) {
+	 		} else if (arrayIn(enteredPin, passwords, 9) == 2) {
 	 			HD44780_PutStr("Insufficent");
 		 		HD44780_GotoXY(0, 1);
 		 		HD44780_PutStr("Funds");
@@ -209,13 +218,13 @@ int main(void)
 }
 
 /*
- * FUNCTION     : readButton
+ * FUNCTION     : buttonVal
  * DESCRIPTION  : This function reads the button number entered by the user
  * PARAMETERS   : void
  * RETURNS      : char: the character value of the button number
  */
 
-char readButton(void) {
+char buttonVal(void) {
 	uint8_t mode = 1;
 	int flag = 0;
 	while(flag == 0) {
@@ -244,7 +253,7 @@ char readButton(void) {
 }
 
 /*
- * FUNCTION     : isInArray
+ * FUNCTION     : arrayIn
  *
  * DESCRIPTION  : This function checks the array initialized at the beginning of the file and scans for the inputted pin
  *
@@ -254,10 +263,8 @@ char readButton(void) {
  *
  * RETURNS      : int: 1 if valid, 2 if valid but not enough money, 0 if invalid
  */
-int isInArray(int pin, int passwords[], int size) {
-	if (pin == 3333) {
-		return 2;
-	}
+int arrayIn(int pin, int passwords[], int size) {
+
 	for (int i = 0; i < size; i++) {
 		if (passwords[i] == pin) {
 			return 1;
@@ -265,6 +272,10 @@ int isInArray(int pin, int passwords[], int size) {
 	}
 
 	return 0;
+
+  	if (pin == 3333) {
+		return 2;
+	}
 }
 
 /**
