@@ -4,11 +4,9 @@
   * FILE          : main.c
   * PROJECT       : COE4DS4 - Lab Assignment #4
   * PROGRAMMER    : Uday Sharma, Vivek Patel
-  * FIRST VERSION : 2021-04-02
+  * FIRST VERSION : 2021-04-03
   * DESCRIPTION   :
-  *		The functions in this file are used to simulate a point of sales
-  *		terminal. They serve to transition between 6 states; from welcome to
-  *		transaction termination.
+  *		The functions in this file are used to simulate a credit card reader that processes a transaction
   ******************************************************************************
   * @attention
   *

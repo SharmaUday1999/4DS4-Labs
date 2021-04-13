@@ -1,0 +1,42 @@
+21:14:25 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:3: warning: implicit declaration of function 'HD44780_Init'; did you mean 'HAL_Init'? [-Wimplicit-function-declaration]
+   HD44780_Init();
+   ^~~~~~~~~~~~
+   HAL_Init
+../Core/Src/main.c:112:6: warning: implicit declaration of function 'HD44780_ClrScr' [-Wimplicit-function-declaration]
+      HD44780_ClrScr();
+      ^~~~~~~~~~~~~~
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HD44780_PutStr' [-Wimplicit-function-declaration]
+    HD44780_PutStr("Retrieving data");
+    ^~~~~~~~~~~~~~
+../Core/Src/main.c:140:4: warning: implicit declaration of function 'HD44780_GotoXY' [-Wimplicit-function-declaration]
+    HD44780_GotoXY(0, 1);
+    ^~~~~~~~~~~~~~
+../Core/Src/main.c:161:22: warning: implicit declaration of function 'fmod' [-Wimplicit-function-declaration]
+      float seconds = fmod(timeVar,100);
+                      ^~~~
+../Core/Src/main.c:161:22: warning: incompatible implicit declaration of built-in function 'fmod'
+../Core/Src/main.c:161:22: note: include '<math.h>' or provide a declaration of 'fmod'
+../Core/Src/main.c:68:8: warning: variable 'delimiter' set but not used [-Wunused-but-set-variable]
+  char* delimiter = (char*)calloc(10, sizeof(char));
+        ^~~~~~~~~
+arm-none-eabi-gcc -o "Lab5.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sharm\Documents\GitHub\4DS4-Labs\Lab5\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab5.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab5.elf
+ 
+arm-none-eabi-objdump -h -S  Lab5.elf  > "Lab5.list"
+arm-none-eabi-objcopy  -O binary  Lab5.elf  "Lab5.bin"
+arm-none-eabi-size   Lab5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38400	    488	   1712	  40600	   9e98	Lab5.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab5.bin
+ 
+Finished building: Lab5.list
+ 
+
+21:14:26 Build Finished. 0 errors, 7 warnings. (took 1s.11ms)
+
